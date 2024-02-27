@@ -34,7 +34,7 @@ public class MemberRepositoryV3 {
             con = getConnection();
             pstmt = con.prepareStatement(sql);
             pstmt.setString(1, member.getMemberId());
-            pstmt.setInt(2, member.getMoney());  
+            pstmt.setInt(2, member.getMoney());
             pstmt.executeUpdate();
             return member;
         } catch (SQLException e) {
